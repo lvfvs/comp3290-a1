@@ -1,0 +1,9 @@
+CD22 test-a
+
+main
+    x : bool
+
+begin
+    x := 7;
+
+end CD22 test-a

@@ -1,0 +1,139 @@
+// COMP3290 CD22 Compiler
+// Tokens to be used in your Compiler
+
+// Token value for end of file
+TTEOF =  0, // end of file
+
+// The 32 keywords
+TCD22 = 1, // CD22
+TCONS = 2, // constants
+TTYPS = 3, // types
+TTDEF = 4, // def
+TARRS = 5, // arrays
+TMAIN = 6, // main
+TBEGN = 7, // begin
+TTEND = 8, // end
+TARAY = 9, // array
+TTTOF = 10, // of
+TFUNC = 11, // func
+TVOID = 12, // void
+TCNST = 13, // const
+TINTG = 14, // int
+TFLOT = 15, // float
+TBOOL = 16, // bool
+TTFOR = 17, // for
+TREPT = 18, // repeat
+TUNTL = 19, // until
+TIFTH = 20, // if
+TELSE = 21, // else
+TELIF = 22, // elif   
+TINPT = 23, // input
+TPRNT = 24, // print
+TPRLN = 25, // printline   
+TRETN = 26, // return
+TNOTT = 27, // not
+TTAND = 28, // and
+TTTOR = 29, // or
+TTXOR = 30, // xor
+TTRUE = 31, // true   
+TFALS = 32, // false
+
+// the operators and delimiters
+TCOMA = 33, // comma
+TLBRK = 34, // leftbracket
+TRBRK = 35, // rightbracket
+TLPAR = 36, // leftparen
+TRPAR = 37, // rightparen    
+TEQUL = 38, // equals
+TPLUS = 39, // plus
+TMINS = 40, // minus
+TSTAR = 41, // star
+TDIVD = 42, // slash
+TPERC = 43, // percent   
+TCART = 44, // carat
+TLESS = 45, // less
+TGRTR = 46, // greater
+TCOLN = 47, // colon
+TSEMI = 48, // semicolon
+TDOTT = 49, // dot    
+TLEQL = 50, // <=
+TGEQL = 51, // >=  
+TNEQL = 52, // !=
+TEQEQ = 53, // ==
+TPLEQ = 54, // +=
+TMNEQ = 55, // -=
+TSTEQ = 56, // *=
+TDVEQ = 57, // /=
+
+// the tokens which need tuple values
+TIDEN = 58, 
+TILIT = 59, 
+TFLIT = 60, 
+TSTRG = 61, 
+TUNDF = 62;
+
+// Corresponding output tokens, padded for ease of use!
+TPRINT[] = {
+"TTEOF ",
+"TCD22 ", 
+"TCONS ",
+"TTYPS ", 
+"TTDEF ",
+"TARRS ", 
+"TMAIN ",
+"TBEGN ", 
+"TTEND ", 
+"TARAY ", 
+"TTTOF ",
+"TFUNC ", 
+"TVOID ",
+"TCNST ", 
+"TINTG ", 
+"TFLOT ", 
+"TBOOL ",
+"TTFOR ", 
+"TREPT ",
+"TUNTL ", 
+"TIFTH ", 
+"TELSE ", 
+"TELIF ",     
+"TINPT ", 
+"TPRNT ",
+"TPRLN ",     
+"TRETN ", 
+"TNOTT ",
+"TTAND ", 
+"TTTOR ", 
+"TTXOR ",
+"TTRUE ",     
+"TFALS ",       
+"TCOMA ",
+"TLBRK ", 
+"TRBRK ", 
+"TLPAR ",
+"TRPAR ",     
+"TEQUL ", 
+"TPLUS ",
+"TMINS ", 
+"TSTAR ", 
+"TDIVD ",
+"TPERC ",     
+"TCART ", 
+"TLESS ",
+"TGRTR ", 
+"TCOLN ", 
+"TSEMI ",
+"TDOTT ",     
+"TLEQL ", 
+"TGEQL ",     
+"TNEQL ", 
+"TEQEQ ", 
+"TPLEQ ",
+"TMNEQ ", 
+"TSTEQ ", 
+"TDVEQ ", 
+"TIDEN ",
+"TILIT ", 
+"TFLIT ",
+"TSTRG ", 
+"TUNDF "};

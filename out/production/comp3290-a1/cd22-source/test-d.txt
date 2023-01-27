@@ -1,0 +1,10 @@
+CD22 test-d
+
+main
+    i : int
+
+begin
+    print "hello world";
+
+end CD22 test-d
+
