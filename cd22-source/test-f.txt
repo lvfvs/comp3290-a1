@@ -1,5 +1,46 @@
+/** This program takes 3 points as input from the user, and computes the Cartesian distance between each pair of points,
+    and then determines the points at maximum distance and prints their position in the list and coordinates, then will
+    output the result **/
+
 CD22 test-f
 
 constants
-    n = 20
+    NUMBEROFPOINTS = 20
+
+types
+    cartesianPoint def
+        x : int,
+        y : int,
+        z : int
+    end
+
+    cartesianPoints def array [NUMBEROFPOINTS] of cartesianPoint end
+
+arrays
+    cartesianPointsList : cartesianPoints
+
+/-- Prompts user input and stores it as cartesianPoints within the cartesianPointsList array
+func inputCartesianPoints() : int
+    printline "please input 3 different cartesian point values";
+begin
+    printline "x value: ";
+    input x;
+    printline "y value: ";
+    input y;
+    printline "z value: ";
+
+    cartesianPointsList[i].x = x;
+    cartesianPointsList[i].y = y;
+    cartesianPointsList[i].z = z;
+end
+
+/-- Computes the cartesian distance between cartesianPoints using the 3D cartesian formula
+func calculateDistance(a : cartesianPoint, b : cartesianPoint) : float
+begin
+    return ((a.x - b.x) ^ 2 + (a.y - b.y) ^ 2 + (a.z - b.z)) ^ 0.5;
+end
+
+/-- Calculates the cartesianPoint with the maximum distance
+func calculateMaximumDistance(
+
 

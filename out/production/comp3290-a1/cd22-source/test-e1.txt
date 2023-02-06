@@ -1,1 +1,19 @@
-"meow"
+/-- A program which includes simple variables
+
+CD22 test-e1
+
+main
+    x : int
+    y : int
+    z : int
+
+begin
+    printline "Please type 2 integer values";
+    input x, y;
+
+    x + y = z;
+
+    printline "The value of z is ", z;
+
+end CD22 test-e1
+

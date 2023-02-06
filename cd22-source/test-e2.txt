@@ -1,0 +1,30 @@
+/-- A simple program which constructs an array
+
+CD22 test-e2
+
+constants
+    ARRAYSIZE = 7
+
+types
+    book def
+        title : string
+        author : string,
+        numberOfPages: int
+    end
+
+    books def array [ARRAYSIZE] of book end
+
+arrays
+    library : books
+
+main
+    val : string
+    val : string
+    val : int
+
+begin
+    library[0].title = "The Beauty of Everyday Things";
+    library[0].author = "Soetsu Yanagi";
+    library[0].height = 346;
+
+end CD22 test-e2

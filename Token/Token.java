@@ -155,12 +155,11 @@ public class Token {
 
     public Token(Tokens token, int lineNumber, int columnNumber, String lexeme) {
         this.tokenID = token;
-        this.lineNumber = 0;
-        this.columnNumber = 0;
-        this.lexeme = "";
+        this.lineNumber = lineNumber;
+        this.columnNumber = columnNumber;
+        this.lexeme = lexeme;
     }
 
-    // Not a lot is happening with the following classes at the moment, but they will be used in the next submission
     public Tokens getTokenID() {
         return tokenID;
     }
@@ -177,10 +176,32 @@ public class Token {
         return lexeme;
     }
 
-    // Allows the program to provide the string representation of the Tokens
-    public String toString() {
-        return TPRINT[tokenID.ordinal()];
+    public boolean isUndefined() {
+        return tokenID == Tokens.TUNDF;
+    }
 
-        // Pads printed output into spaced sections of 6, one field containing the token value, and the following containing the lexeme
+    /**
+     * Provides the string representation of the Tokens the program outputs, with formatting to align with project specifications
+     *
+     * @return A string representation of a Token
+     */
+    @Override
+    public String toString() {
+        StringBuilder output = new StringBuilder();
+
+        if (getTokenID() == Tokens.TIDEN ||
+                getTokenID() == Tokens.TILIT ||
+                getTokenID() == Tokens.TFLIT ||
+                getTokenID() == Tokens.TSTRG) {
+
+            // Formatting doesn't look like it is working?
+            int format = (getLexeme().length() / 6) * 6 + 6;
+            output.append(Token.TPRINT[getTokenID().ordinal()]).append(" ").append(getLexeme()).append(" ".repeat(format - getLexeme().length()));
+        } else {
+            output.append(Token.TPRINT[getTokenID().ordinal()]);
+        }
+
+        return output.toString();
     }
 }
+

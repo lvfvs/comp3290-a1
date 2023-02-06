@@ -1,12 +1,12 @@
 /*
  *
- * File: Output.java
+ * File: OutputController.java
  * Assignment: Project Part 1
  * Course: COMP3290 (Compiler Design)
  * Author: Olivia Favos
  * Student Number: c3188124
  *
- * Description: Output.java doesn't do a lot right now. But! Eventually, it will output lexical errors,
+ * Description: OutputController.java doesn't do a lot right now. But! Eventually, it will output lexical errors,
  *              cut off output after the output exceeds 60 characters in length, and will receive a
  *              character from the scanner and add it to the program listing.
  *
@@ -20,7 +20,7 @@
 
 package Common;
 
-public class Output {
+public class OutputController {
 
    // I know this should be here since I'd like to print the error with the line number! So, putting it here for later
    private int lineNumber;
